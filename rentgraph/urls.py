@@ -15,7 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from accounts import urls as urls_accounts
+from posts import urls as urls_posts
+from django.views import static
+from posts.views import all_posts
+from .settings import MEDIA_ROOT
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'^$', all_posts, name='index'),
+
 ]
