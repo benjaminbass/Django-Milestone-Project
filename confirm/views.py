@@ -1,7 +1,3 @@
-from django.shortcuts import render
-
-# Create your views here.
-
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
@@ -18,8 +14,8 @@ import stripe
 stripe.api_key = settings.STRIPE_SECRET
 
 
-def confirm(request):
-    if request.method=="POST":
+def confirm(request, pk=None):
+    if request.method == "POST":
         order_form = OrderForm(request.POST)
         payment_form = MakePaymentForm(request.POST)
 
@@ -34,26 +30,23 @@ def confirm(request):
                 post = get_object_or_404(Post, pk=id)
                 total += quantity * post.price
                 order_line_item = OrderLineItem(
-                    order = order, 
-                    post = post, 
-                    quantity = quantity
-                    )
+                    product=order,
+                    order=post,
+                    quantity=quantity)
                 order_line_item.save()
 
             try:
                 customer = stripe.Charge.create(
-                    amount = int(total * 100),
-                    currency = "GBP",
-                    description = request.user.email,
-                    card = payment_form.cleaned_data['stripe_id'],
+                    amount=int(total * 100),
+                    currency="GBP",
+                    card=payment_form.cleaned_data['stripe_id'],
                 )
             except stripe.error.CardError:
                 messages.error(request, "Your card was declined!")
 
             if customer.paid:
                 messages.error(request, "You have successfully paid")
-                request.session['cart'] = {}
-                return redirect(reverse('products'))
+                return redirect(reverse('complete'))
             else:
                 messages.error(request, "Unable to take payment")
         else:
