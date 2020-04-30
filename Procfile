@@ -1,0 +1,1 @@
+web: gunicorn rentgraph.wsgi:application

@@ -1,39 +1,48 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Welcome to the RentGraph project! #
 
-Welcome Bendoo1,
+This project has been built for users to purchase graphics related services such as Twitch emotes, characatuers and blueprints. When logged in, users can add posts and edit the posts on the site. Users can also leave user feedback which will help improve the site in the longrun.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+## UX #
 
-## Gitpod Reminders
+This project has a mobile first approach. The website provides a clear and approachable format for all users, regardless of device or resolution. The user will also be able to navigate around the site using the nav bar, this will show as top bar in desktop, and as a burger menu in mobile.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### User Stories #
 
-`python3 -m http.server`
+* As a user I want to be able to pruchase the posts shown on the site.
+* As a user I want to be able to leave feedback on the site.
+* As a user I want to be able to login to edit and add posts.
+* As a user I want to know what I am buying in a checkout screen.
 
-A blue button should appear to click: *Make Public*,
+### Features #
 
-Another blue button should appear to click: *Open Browser*.
+Here you can find a list of available features from the RentGraph website.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* Purchase any of the advertised posts
+* Create or edit posts whilst logged in
+* Leave feedback on the website
+* Register an account for the site
+* View posts on the website
 
-A blue button should appear to click: *Make Public*,
+### Further Functionality #
 
-Another blue button should appear to click: *Open Browser*.
+Further functionality I would like to add in the future includes but is not limited to:
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
+* Search for posts
+* Filter posts based on tag
+* Have posts be tied to user's accounts
+* Add ability to link up paypal so artists receive their revenue automatically
+* Have feedback be stored in a table to read at a later date
 
-## Updates Since The Instructional Video
+### Technologies Used #
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+-  **HTML**
+    - Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser.
+- **CSS**
+    - Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML.
+- **JavaScript**
+    - JavaScript (JS) is a high-level programming language, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+- **Python**
+    - Python is an interpreted, high-level, general-purpose programming language.
+- **Django**
+    - Django is a Python-based free and open-source web framework, which follows the model-template-view (MTV) architectural pattern.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
---------
-
-Happy coding!

@@ -30,3 +30,47 @@ a:hover {
     max-height: 450px;
     min-height: 450px;
 }
+
+.post-image {
+    max-height: 150px;
+    min-height:150px;
+    max-width: 150px;
+    min-width: 150px;
+}
+
+html,
+body {
+  height: 130%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: 0;
+}
+
+.logo {
+    max-height: 25px;
+    margin-top: -6px;
+}
+
+.logo-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    top: 3px;
+}
+
+.btn-primary a {
+    color: white;
+}
+
+.navbar-fixed-bottom {
+    background-image: linear-gradient(rgb(252, 252, 252), rgb(163, 163, 163))
+}
+
+.footer-text {
+    color: rgb(104, 104, 104)
+}
