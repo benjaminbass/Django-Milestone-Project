@@ -46,3 +46,4 @@ Further functionality I would like to add in the future includes but is not limi
 - **Django**
     - Django is a Python-based free and open-source web framework, which follows the model-template-view (MTV) architectural pattern.
 
+Alot of this project was borrowed from previous sections of the Django Frameworks module, this was to set up the user authentication and adding posts.
