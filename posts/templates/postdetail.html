@@ -6,7 +6,7 @@
         </div>
         <div class="col-sm-10 col-md-9">
             {% if post.image %}
-                <img class="post-image" src="/media/{{ post.image }}">
+                <img class="post-image" src="{{ MEDIA_URL }}{{ post.image }}">
             {% endif %}
             <h3>{{ post.service_name }}</h3>
             <div class="row">
