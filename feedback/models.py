@@ -5,7 +5,7 @@ from django.db import models
 
 class Feedback(models.Model):
     rating = models.IntegerField(
-        default='')
+        default=1)
     further_information = models.TextField()
 
     def __str__(self):
