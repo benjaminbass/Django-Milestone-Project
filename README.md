@@ -47,3 +47,21 @@ Further functionality I would like to add in the future includes but is not limi
     - Django is a Python-based free and open-source web framework, which follows the model-template-view (MTV) architectural pattern.
 
 Alot of this project was borrowed from previous sections of the Django Frameworks module, this was to set up the user authentication and adding posts.
+
+### Deployment #
+
+Deployment was done initially through GitHub, when I checked that everything was coming through correctly, I then deployed to Heroku. As you are unable to deploy projects directly through to Heroku when creating a Django application, this was instead facilitated by AWS by hosting any local files on their S3 service.
+
+Deployment was completed regularly throughout the project as a form of backup if anything were to go wrong with my local version.
+
+You can see evidence of my regular deployments in GitHub and Heroku.
+
+### Testing #
+
+Testing was completed as developed, through trial and error. Main testing was done after I had completed the setup of the initial template (borrowed from Code Institute as mentioned above).
+
+The testing methods included checking that user navigation was fluid i.e. all links worked correctly and allowed for accessing the previously accessed page and the home page. This mainly helped for my Feedback and order Confirm pages as it highlighted that there was no way to get back to the home page from these pages.
+
+Other testing included allowing family and friends to view the site from Heroku and provide feedback which I then worked around as and when this was spoken about.
+
+Another form of very helpful testing was completed by the Code Institute support team as they were helping me write this project. A member of the team named Tim pointed out that the site did not look very personalised when initially viewing, I changed the site to include a footer that included contact details and links to point to my socials and GitHub repos.
